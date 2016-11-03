@@ -1,0 +1,30 @@
+{
+  "name": "ipcamera-streamer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billautomata/ipcamera-streamer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billautomata/ipcamera-streamer/issues"
+  },
+  "homepage": "https://github.com/billautomata/ipcamera-streamer#readme",
+  "dependencies": {
+    "buffertools": "^2.1.4",
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express-server": "^0.5.3",
+    "grunt-run": "^0.6.0",
+    "lame": "^1.2.4",
+    "request": "^2.76.0",
+    "socket.io": "^1.5.1"
+  }
+}

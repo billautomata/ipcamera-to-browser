@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>camera-streamer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <img id='yup' style='width: 100%'>
+  <audio controls height='100px' width='300px'  src='/stream.mp3'></audio>
+</body>
+<script src="/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="/js/vendor/bootstrap.min.js" ></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+  var socket = window.io.connect()
+  var once = false
+  var img = document.getElementById('yup')
+  socket.on('jpg', function(msg){
+    img.src = 'data:image/jpg;base64,' + msg
+  })
+</script>
+</html>
